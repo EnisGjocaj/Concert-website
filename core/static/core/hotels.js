@@ -32,12 +32,5 @@ observer.observe(zoomContainer);
     showSlide(currentSlide);
   }
 
-  const nextButton = document.getElementById('next-button');
-  const prevButton = document.getElementById('prev-button');
-
-  if (nextButton && prevButton) {
-    nextButton.addEventListener('click', nextSlide);
-    prevButton.addEventListener('click', prevSlide);
-  }
 
 setInterval(nextSlide, 5000);
